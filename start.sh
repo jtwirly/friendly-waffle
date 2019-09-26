@@ -14,4 +14,4 @@ python webhook.py
 python createpaymentintentonserver.py
 python createpaymentintentwithapaymentmethod.py
 # For production use: 
-# gunicorn server:app -w 1 --log-file -
+gunicorn server:app -w 1 --log-file -
