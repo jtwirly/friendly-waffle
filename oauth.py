@@ -1,4 +1,4 @@
-//from https://github.com/stripe/stripe-python/blob/master/stripe/oauth.py
+# from https://github.com/stripe/stripe-python/blob/master/stripe/oauth.py
 
 from __future__ import absolute_import, division, print_function
 
