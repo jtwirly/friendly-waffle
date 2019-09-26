@@ -1,5 +1,5 @@
 # You can find your endpoint's secret in your webhook settings
-endpoint_secret = whsec_duMYveAXJKhIoOhlNnmpcB3Y3Ird5TSD
+endpoint_secret = 'whsec_duMYveAXJKhIoOhlNnmpcB3Y3Ird5TSD'
 
 @app.route("/webhook", methods=['POST'])
 def webhook():
