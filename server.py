@@ -13,6 +13,15 @@
 import os
 from flask import Flask, request, render_template, jsonify
 
+# Connecting Heroku in Python: To use PostgreSQL as your database in Python applications https://devcenter.heroku.com/articles/heroku-postgresql#connecting-in-python
+import os
+import psycopg2
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# end of code for connecting Heroku in Python
+
 # Support for gomix's 'front-end' and 'back-end' UI.
 app = Flask(__name__, static_folder='public', template_folder='views')
 
